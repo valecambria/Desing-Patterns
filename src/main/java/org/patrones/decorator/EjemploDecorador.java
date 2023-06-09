@@ -13,6 +13,7 @@ public class EjemploDecorador {
         ReversaDecorador reversa = new ReversaDecorador(mayuscula);
         SubrayadoDecorador subrayar = new SubrayadoDecorador(reversa);
         ReemplazarEspacioDecorador reemplazar = new ReemplazarEspacioDecorador(subrayar);
+
         System.out.println(reemplazar.darFormato());
     }
 }
